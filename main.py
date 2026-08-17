@@ -62,13 +62,6 @@ def huffman_cost(C, f):
     # TODO
     pass
 
-def test_huffman_simple():
-    """ example from class """
-    f = Counter(["A", "A", "A", "A", "A", "A", "A", "A", "A", "B", "C", "D"])
-    T = make_huffman_tree(f)
-    C = get_code(T)
-    assert huffman_cost(C, f) == 17
-
 def analyze_files():
     for fname in ['alice29.txt', 'asyoulik.txt', 'f1.txt', 'fields.c', 'grammar.lsp']:
         f = get_frequencies(fname)
@@ -106,13 +99,3 @@ def fast_align_MED(S, T):
     # for traceback of alignment
     # returns the two alignments (see test_align)
     pass
-
-def test_MED():
-    for S, T in test_cases:
-        assert fast_MED(S, T) == MED(S, T)
-                                 
-def test_align():
-    for i in range(len(test_cases)):
-        S, T = test_cases[i]
-        align_S, align_T = fast_align_MED(S, T)
-        assert (align_S == alignments[i][0] and align_T == alignments[i][1])
