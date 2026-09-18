@@ -1,6 +1,6 @@
 from main import *
 
-# 5 pts
+# 10 pts
 def test_huffman_simple():
     """ example from class """
     f = Counter(["A", "A", "A", "A", "A", "A", "A", "A", "A", "B", "C", "D"])
@@ -8,12 +8,12 @@ def test_huffman_simple():
     C = get_code(T)
     assert huffman_cost(C, f) == 17
 
-# 5 pts
+# 6 pts
 def test_MED():
     for S, T in test_cases:
         assert fast_MED(S, T) == MED(S, T)
 
-# 5 pts                               
+# 6 pts                               
 def test_align():
     for i in range(len(test_cases)):
         S, T = test_cases[i]

@@ -30,11 +30,11 @@ performance on a dataset of 5 text files (`alice29.txt`, `asyoulik.txt`, `f1.txt
   represents a character in the alphabet) we store the
   collected encoding for that character in `code`.
 
-**1c)** Now implement `huffman_cost` to compute the cost of a Huffman
+**1c) (10 pts)** Now implement `huffman_cost` to compute the cost of a Huffman
   encoding for a character set with given frequencies, and test your 
   implementation of Huffman coding using `test_huffman_simple`.
 
-**1d)** Test your Huffman coding on the 5 given text files using
+**1d) (5 pts)** Test your Huffman coding on the 5 given text files using
   `analyze_files`. Fill out a table containing of the encoding cost of 
   each file for both fixed-length and Huffman encodings. Fill out a final 
   column which gives the ratio of Huffman coding cost to fixed-length
@@ -44,7 +44,7 @@ performance on a dataset of 5 text files (`alice29.txt`, `asyoulik.txt`, `f1.txt
 **enter answer in `answers.md`**
 
 
-**1e)** Suppose that we used Huffman coding on a document with alphabet $\Sigma$ in
+**1e) (4 pts)** Suppose that we used Huffman coding on a document with alphabet $\Sigma$ in
   which every character had the same frequency. What is the expected
   cost of a Huffman encoding for the document? Is it consistent across
   documents?
@@ -64,19 +64,19 @@ such strange denominations. You think about it a while, and because
 you had such a good Algorithms instructor, you realize that there is a
 very clever reason. 
 
-**2a)** Given a $N$ dollars, state a greedy algorithm for producing
+**2a) (5 pts)** Given a $N$ dollars, state a greedy algorithm for producing
 as few coins as possible that sum to $N$.
 
 **enter answer in `answers.md`**
 
 
-**2b)** Prove that this algorithm is optimal by proving the greedy
+**2b) (5 pts)** Prove that this algorithm is optimal by proving the greedy
   choice and optimal substructure properties.
 
 **enter answer in `answers.md`**
 
 
-**2c)** What is the work and span of your algorithm?
+**2c) (4 pts)** What is the work and span of your algorithm?
 
 **enter answer in `answers.md`**
 
@@ -99,11 +99,11 @@ and then implement a way to visualize the optimal sequence of edits.
 
 **enter answer in `answers.md`**
 
-**3b)** Now implement `fast_MED`, a **bottom-up**
+**3b) (6 pts)** Now implement `fast_MED`, a **bottom-up**
   memoized version of `MED`. Test your implementation code using `test_MED`.
 
 
-**3c)** Now that you have implemented an efficient algorithm for
+**3c) (6 pts)** Now that you have implemented an efficient algorithm for
   computing edit distance, let's turn to the problem of identifying
   the actual edits between two sequences.
 
