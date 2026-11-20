@@ -8,14 +8,34 @@ def test_huffman_simple():
     C = get_code(T)
     assert huffman_cost(C, f) == 17
 
+test_cases = [('book', 'back'), ('kookaburra', 'kookybird'), ('relevant', 'elephant')]
+
 # 6 pts
 def test_MED():
     for S, T in test_cases:
         assert fast_MED(S, T) == MED(S, T)
 
-# 6 pts                               
-def test_align():
-    for i in range(len(test_cases)):
-        S, T = test_cases[i]
-        align_S, align_T = fast_align_MED(S, T)
-        assert (align_S == alignments[i][0] and align_T == alignments[i][1])
+# 2 pts                               
+def test_align_1():
+    S = 'book'
+    T = 'back'
+    align_S, align_T = fast_align_MED(S, T)
+    assert (align_S == 'book' and align_T == 'back')
+
+# 2 pts
+def test_align_2():
+    S = 'kookaburra'
+    T = 'kookybird'
+    align_S, align_T = fast_align_MED(S, T)
+    assert (align_S == 'kookaburra' 
+            and (align_T == 'kookybird-' 
+                 or align_T == 'kookybir-d'
+                 or align_T == 'kookyb-ird'))
+
+# 2 pts                               
+def test_align_3():
+    S = 'relevant'
+    T = 'elephant'
+    align_S, align_T = fast_align_MED(S, T)
+    assert ((align_S == 'relev-ant' and align_T == '-elephant')
+            or (align_S == 'rele-vant' and align_T == '-elephant'))

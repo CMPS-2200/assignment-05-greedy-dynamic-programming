@@ -20,13 +20,13 @@ Place all written answers from `assignment-05.md` here for easier grading.
 
 **2: Making Change**
 
-- **2a. (5 pts)** Given a $N$ dollars, state a greedy algorithm for producing
+- **2a. (8 pts)** Given a $N$ dollars, state a greedy algorithm for producing
 as few coins as possible that sum to $N$.
 
 
 
 
-- **2b. (5 pts)** Prove that this algorithm is optimal by proving the greedy
+- **2b. (7 pts)** Prove that this algorithm is optimal by proving the greedy
   choice and optimal substructure properties.
 
 

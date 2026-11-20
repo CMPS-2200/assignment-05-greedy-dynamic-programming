@@ -64,13 +64,13 @@ such strange denominations. You think about it a while, and because
 you had such a good Algorithms instructor, you realize that there is a
 very clever reason. 
 
-**2a) (5 pts)** Given a $N$ dollars, state a greedy algorithm for producing
+**2a) (8 pts)** Given a $N$ dollars, state a greedy algorithm for producing
 as few coins as possible that sum to $N$.
 
 **enter answer in `answers.md`**
 
 
-**2b) (5 pts)** Prove that this algorithm is optimal by proving the greedy
+**2b) (7 pts)** Prove that this algorithm is optimal by proving the greedy
   choice and optimal substructure properties.
 
 **enter answer in `answers.md`**
@@ -86,7 +86,7 @@ In class we proved an optimal substructure property for the **Edit
 Distance** problem. This allowed us to implement a simple recursive
 algorithm in Python that was horribly inefficient. We're going to
 implement a slightly different version of edit distance that includes
-substitutions, develop a top-down memoization scheme
+substitutions, develop a bottom-up memoization scheme
 and then implement a way to visualize the optimal sequence of edits.
 
 

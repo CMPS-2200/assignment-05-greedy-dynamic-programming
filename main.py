@@ -73,9 +73,6 @@ def analyze_files():
 
 ####### Problem 4 #######
 
-test_cases = [('book', 'back'), ('kookaburra', 'kookybird'), ('relevant', 'elephant')]
-alignments = [('book', 'back'), ('kookaburra', 'kookybird-'), ('relev-ant','-elephant')]
-
 def MED(S, T):
     # TODO - modify to account for insertions, deletions and substitutions
     if (S == ""):
@@ -88,7 +85,6 @@ def MED(S, T):
         else:
             return(1 + min(MED(S, T[1:]), MED(S[1:], T)))
 
-
 def fast_MED(S, T):
     # TODO -  implement bottom-up memoization
     # returns only the edit distance cost
@@ -97,5 +93,5 @@ def fast_MED(S, T):
 def fast_align_MED(S, T):
     # TODO - implement bottom-up memoization, allowing
     # for traceback of alignment
-    # returns the two alignments (see test_align)
+    # returns the two alignments (see test_align_N tests)
     pass
